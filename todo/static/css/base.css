@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    font-family:arial,sans-serif;
+    font-size:100%;
+    margin:3em;
+    background:#666;
+    color:#fff;
+  }
+  h2,p{
+    font-size:100%;
+    font-weight:normal;
+  }
+  ul,li{
+    list-style:none;
+  }
+  ul{
+    overflow:hidden;
+    padding:3em;
+  }
+  ul li a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+  }
+  ul li{
+    margin:1em;
+    float:left;
+  }
+  ul li h2{
+    font-size:140%;
+    font-weight:bold;
+    padding-bottom:10px;
+  }
+  ul li p{
+    font-family:"Reenie Beanie",arial,sans-serif;
+    font-size:180%;
+  }
+  ul li a{
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+  }
+  ul li:nth-child(even) a{
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  ul li:nth-child(5n) a{
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  ol{text-align:center;}
+  ol li{display:inline;padding-right:1em;}
+  ol li a{color:#fff;}
+  
+  
+  .close {
+    position: absolute;
+    margin: -25px;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.2;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  
+  
+  
+  
+  
+  @import url(http://weloveiconfonts.com/api/?family=iconicfill);
+  @import url(https://fonts.googleapis.com/css?family=Arvo);
+  /* iconicfill */
+  [class*="iconicfill-"]:before {
+    font-family: 'IconicFill', sans-serif;
+  }
+  
+  body,html{width:100%;height:100%;}
+  body{font-family:'Arvo'; background: #4f3b5b;background: -moz-radial-gradient(center, ellipse cover,  #4f3b5b 0%, #231733 100%);background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4f3b5b), color-stop(100%,#231733));background: -webkit-radial-gradient(center, ellipse cover,  #4f3b5b 0%,#231733 100%);background: -o-radial-gradient(center, ellipse cover,  #4f3b5b 0%,#231733 100%);background: -ms-radial-gradient(center, ellipse cover,  #4f3b5b 0%,#231733 100%);background: radial-gradient(ellipse at center,  #4f3b5b 0%,#231733 100%);}
+  
+  .wrap{width:300px;}
+  .center{
+   top:50%;
+   transform:translateY(-50%);
+   position:relative;
+   margin:auto;}
+  
+  input{
+    display:block;
+      width: 300px;
+      padding: 15px 0 15px 12px;
+      font-family: "Arvo";
+      font-weight: 400;
+      color: #377D6A;
+      background: rgba(0,0,0,0.3);
+      border: none;
+      outline: none;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+      border: 1px solid rgba(0,0,0,0.3);
+      border-radius: 4px;
+      box-shadow: inset 0 -5px 45px rgba(175, 51, 51, 0.2), 0 1px  1px rgba(255,255,255,0.2);
+      text-indent: 60px;
+      transition: all .3s ease-in-out;
+      position: relative;
+      font-size: 20px;
+  }
+  input:focus{
+      text-indent: 20px;
+      box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+  }
+  
+  label{
+      display: block;
+      position: static;
+      margin: 0;
+      padding: 0;
+      color:#fff;
+      font-family: 'Arvo';
+      font-size: 16px;
+  }
+  
+  .wrap-label{
+    width: 300px;
+    height: 34px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    bottom: -15px;
+    overflow: hidden;}
+  
+  .iconicfill-pen-alt2{
+      position: absolute;
+      left: 10px;
+      color: #fff;
+      font-size:19px;
+      opacity: 1;
+      top: 0;
+      transform:translateX(-100px);
+  }
+  
+  /* ==== Pen animation ==== */
+  .move-pen{animation: move-pen 1s ease-in infinite alternate;}
+  @keyframes move-pen{
+      from{transform:translateX(-4px) rotate(6deg);}
+      to{transform:translateX(4px) rotate(-3deg);}
+  }
+  
+  button{
+      width: 315px;
+      padding: 15px 0 15px 12px;
+      /* font-family: "Arvo"; */
+      font-weight: 400;
+      color: #377D6A;
+      background: rgba(0, 0, 0, 0.3);
+      /* border: none; */
+      outline: none;
+      color: #fff;
+      margin: 10px;
+      
+      border: 5px solid rgba(0,0,0,0.3);
+      border-radius: 4px;
+      box-shadow: inset 0 -5px 45px rgba(175, 51, 51, 0.2), 0 1px  1px rgba(255,255,255,0.2);
+      /* text-indent: 60px; */
+      
+      font-size:23px;
+  }
+  
+  h1{
+      font-family: "Lucida Console", Times, serif;
+  }
+  
+  #fo{
+      font-family: "Agency FB", Times, serif;
+  }
