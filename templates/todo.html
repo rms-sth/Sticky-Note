@@ -4,17 +4,19 @@
 
 {% block content %}
 
-<center><h1>"Welcome to you TODO list  page"</h1></center>
+<center>
+    <h1 style="font-size: 50px;padding-bottom: 30px;">"Welcome to Sticky Note"</h1>
+</center>
+
   <ul>
     {% for item in all_items %}
     <li>
-        
       <a href="#">
         <h1 id="fo">{{ item.content }}</h1>
         <p>
             <form action="/deleteToDo/{{item.id}}" method="post">
                 {% csrf_token %}
-               <input type="submit" value="X" class="close"/>
+               <button type="submit" class="close"><span>X</span></button>
             </form>
         </p>
       </a>
@@ -25,8 +27,8 @@
 <center>
     <form action="/addToDo/" method="post">
         {% csrf_token %}
-        <input type="text" name="content" placeholder="Enter your TODO list...">
-        <button type="submit" value="Add"><i>Add to TODO list</i></button>
+        <textarea name="content" placeholder="Enter your TODO list..."></textarea>
+        <button type="submit" value="Add" class="submit_button"><i>Submit</i></button>
     </form>
 </center>
 
