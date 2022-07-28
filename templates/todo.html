@@ -14,7 +14,7 @@
       <a href="#">
         <h1 id="fo">{{ item.content }}</h1>
         <p>
-            <form action="/deleteToDo/{{item.id}}" method="post">
+            <form action="/todo-delete/{{item.id}}" method="post">
                 {% csrf_token %}
                <button type="submit" class="close"><span>X</span></button>
             </form>
@@ -25,7 +25,7 @@
   </ul>
 
 <center>
-    <form action="/addToDo/" method="post">
+    <form action="/todo-create/" method="post">
         {% csrf_token %}
         <textarea name="content" placeholder="Enter your TODO list..."></textarea>
         <button type="submit" value="Add" class="submit_button"><i>Submit</i></button>

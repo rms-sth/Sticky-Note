@@ -18,8 +18,8 @@ from django.urls import path
 from todo.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('todo/', todoView),
-    path('addToDo/', addToDo),
-    path('deleteToDo/<int:pk>', deleteToDo),
+    path("admin/", admin.site.urls),
+    path("", todo_list),
+    path("todo-create/", todo_create),
+    path("todo-delete/<int:pk>", todo_delete),
 ]
