@@ -5,6 +5,10 @@
 .AppleDouble
 .LSOverride
 
+# env
+venv/
+.env
+
 # Icon must end with two \r
 Icon
 
