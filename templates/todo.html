@@ -1,35 +1,33 @@
 {% extends 'base.html' %}
-
-{% block title %} Sticky note for TODO list {% endblock %}
-
+{% block title %}Sticky note for TODO list{% endblock %}
 {% block content %}
-
-<center>
+  <center>
     <h1 style="font-size: 50px;padding-bottom: 30px;">"Welcome to Sticky Note"</h1>
-</center>
-
+  </center>
   <ul>
     {% for item in all_items %}
-    <li>
-      <a href="#">
-        <h1 id="fo">{{ item.content }}</h1>
-        <p>
-            <form action="/todo-delete/{{item.id}}" method="post">
-                {% csrf_token %}
-               <button type="submit" class="close"><span>X</span></button>
+      <li>
+        <a href="#">
+          <h1 id="fo">{{ item.content }}</h1>
+          <p>
+            <form action="/todo-delete/{{ item.id }}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="close">
+                <span>X</span>
+              </button>
             </form>
-        </p>
-      </a>
-    </li>
+          </p>
+        </a>
+      </li>
     {% endfor %}
   </ul>
-
-<center>
+  <center>
     <form action="/todo-create/" method="post">
-        {% csrf_token %}
-        <textarea name="content" placeholder="Enter your TODO list..."></textarea>
-        <button type="submit" value="Add" class="submit_button"><i>Submit</i></button>
+      {% csrf_token %}
+      <textarea name="content" placeholder="Enter your TODO list..."></textarea>
+      <button type="submit" value="Add" class="submit_button">
+        <i>Submit</i>
+      </button>
     </form>
-</center>
-
+  </center>
 {% endblock %}
